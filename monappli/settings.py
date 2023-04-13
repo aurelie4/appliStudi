@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'backoffice',
 ]
 
 MIDDLEWARE = [
@@ -75,9 +76,9 @@ WSGI_APPLICATION = 'monappli.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'GoldenLine',
-        'USER': 'GUIRAL',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'bdd_goldenline',
+        'USER': 'majd',
         'PASSWORD': 'Studi2023!',
         'HOST': 'localhost',
         'PORT': '5432',
